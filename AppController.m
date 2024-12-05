@@ -47,10 +47,15 @@
 
 - (void) applicationDidFinishLaunching: (NSNotification *)aNotif
 {
-  NSPopUpButton *popupButton = [[NSPopUpButton alloc] initWithFrame: NSMakeRect(100,100,50,10)];
+  NSPopUpButton *popupButton0 = [[NSPopUpButton alloc] initWithFrame: NSMakeRect(100,60,150,30)];
+  NSPopUpButton *popupButton1 = [[NSPopUpButton alloc] initWithFrame: NSMakeRect(100,100,150,30)];
 
-  [[_window contentView] addSubview: popupButton];
-  AUTORELEASE(popupButton);
+  [[_window contentView] addSubview: popupButton0];
+  [[_window contentView] addSubview: popupButton1];
+  [popupButton1 setPullsDown: YES];
+
+  AUTORELEASE(popupButton0);
+  AUTORELEASE(popupButton1);
   
 //  Uncomment if your application is Renaissance-based
 //  [NSBundle loadGSMarkupNamed: @"Main" owner: self];
