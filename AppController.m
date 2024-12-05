@@ -56,8 +56,17 @@
 
   AUTORELEASE(popupButton0);
   AUTORELEASE(popupButton1);
-  
-//  Uncomment if your application is Renaissance-based
+
+  [popupButton0 addItemWithTitle: @"Item 1"];
+  [popupButton0 addItemWithTitle: @"Item 2"];
+  [popupButton0 addItemWithTitle: @"Item 3"];
+
+  [popupButton1 addItemWithTitle: @"Item 1"];
+  [popupButton1 addItemWithTitle: @"Item 2"];
+  [popupButton1 addItemWithTitle: @"Item 3"];
+  [popupButton1 addItemWithTitle: @"Item 4"];
+
+  //  Uncomment if your application is Renaissance-based
 //  [NSBundle loadGSMarkupNamed: @"Main" owner: self];
   
 }
