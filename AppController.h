@@ -1,7 +1,7 @@
 /* 
    Project: NSPopUpButton_code_test
 
-   Author: Gregory John Casamento,,,
+   Author: Gregory John Casamento
 
    Created: 2024-12-04 19:27:46 -0500 by heron
    

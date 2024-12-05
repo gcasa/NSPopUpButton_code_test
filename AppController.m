@@ -1,7 +1,7 @@
 /* 
    Project: NSPopUpButton_code_test
 
-   Author: Gregory John Casamento,,,
+   Author: Gregory John Casamento
 
    Created: 2024-12-04 19:27:46 -0500 by heron
    
@@ -49,7 +49,7 @@
 {
   NSPopUpButton *popupButton0 = [[NSPopUpButton alloc] initWithFrame: NSMakeRect(100,60,150,30)];
   NSPopUpButton *popupButton1 = [[NSPopUpButton alloc] initWithFrame: NSMakeRect(100,100,150,30)];
-
+  
   [[_window contentView] addSubview: popupButton0];
   [[_window contentView] addSubview: popupButton1];
   [popupButton1 setPullsDown: YES];
@@ -67,8 +67,7 @@
   [popupButton1 addItemWithTitle: @"Item 4"];
 
   //  Uncomment if your application is Renaissance-based
-//  [NSBundle loadGSMarkupNamed: @"Main" owner: self];
-  
+  //  [NSBundle loadGSMarkupNamed: @"Main" owner: self];
 }
 
 - (BOOL) applicationShouldTerminate: (id)sender
