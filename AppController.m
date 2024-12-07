@@ -47,27 +47,24 @@
 
 - (void) applicationDidFinishLaunching: (NSNotification *)aNotif
 {
-  NSPopUpButton *popupButton0 = [[NSPopUpButton alloc] initWithFrame: NSMakeRect(100,60,150,30)];
-  NSPopUpButton *popupButton1 = [[NSPopUpButton alloc] initWithFrame: NSMakeRect(100,100,150,30)];
+  _popupButton0 = [[NSPopUpButton alloc] initWithFrame: NSMakeRect(100,60,150,30)];
+  _popupButton1 = [[NSPopUpButton alloc] initWithFrame: NSMakeRect(100,100,150,30)];
   
-  [[_window contentView] addSubview: popupButton0];
-  [[_window contentView] addSubview: popupButton1];
-  [popupButton1 setPullsDown: YES];
+  [[_window contentView] addSubview: _popupButton0];
+  [[_window contentView] addSubview: _popupButton1];
+  [_popupButton1 setPullsDown: YES];
 
-  AUTORELEASE(popupButton0);
-  AUTORELEASE(popupButton1);
+  AUTORELEASE(_popupButton0);
+  AUTORELEASE(_popupButton1);
 
-  [popupButton0 addItemWithTitle: @"Item 1"];
-  [popupButton0 addItemWithTitle: @"Item 2"];
-  [popupButton0 addItemWithTitle: @"Item 3"];
+  [_popupButton0 addItemWithTitle: @"Item 1"];
+  [_popupButton0 addItemWithTitle: @"Item 2"];
+  [_popupButton0 addItemWithTitle: @"Item 3"];
 
-  [popupButton1 addItemWithTitle: @"Item 1"];
-  [popupButton1 addItemWithTitle: @"Item 2"];
-  [popupButton1 addItemWithTitle: @"Item 3"];
-  [popupButton1 addItemWithTitle: @"Item 4"];
-
-  //  Uncomment if your application is Renaissance-based
-  //  [NSBundle loadGSMarkupNamed: @"Main" owner: self];
+  [_popupButton1 addItemWithTitle: @"Item 1"];
+  [_popupButton1 addItemWithTitle: @"Item 2"];
+  [_popupButton1 addItemWithTitle: @"Item 3"];
+  [_popupButton1 addItemWithTitle: @"Item 4"];
 }
 
 - (BOOL) applicationShouldTerminate: (id)sender
@@ -87,6 +84,13 @@
 
 - (void) showPrefPanel: (id)sender
 {
+}
+
+- (IBAction) toggle: (id)sender
+{
+  BOOL pullsDown = [_popupButton0 pullsDown];
+  NSLog(@"%d", pullsDown);
+  [_popupButton0 setPullsDown: !pullsDown];
 }
 
 @end

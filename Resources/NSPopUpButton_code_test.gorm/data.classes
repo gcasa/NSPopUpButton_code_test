@@ -2,7 +2,8 @@
     "## Comment" = "Do NOT change this file, Gorm maintains it";
     AppController = {
 	Actions = (
-	    "showPrefPanel:"
+	    "showPrefPanel:",
+	    "toggle:"
 	);
 	Outlets = (
 	    "_window"
@@ -11,6 +12,7 @@
     };
     FirstResponder = {
 	Actions = (
+	    "newAction:",
 	    "orderFrontFontPanel:",
 	    "showPrefPanel:"
 	);
