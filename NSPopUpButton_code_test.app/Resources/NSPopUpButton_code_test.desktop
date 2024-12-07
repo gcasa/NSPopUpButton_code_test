@@ -1,7 +1,0 @@
-[Desktop Entry]
-Type=Application
-Categories=X-GNUstep;
-Name=NSPopUpButton_code_test
-StartupWMClass=NSPopUpButton_code_test
-Comment=No description avaliable!
-Exec=/usr/GNUstep/System/Tools/openapp NSPopUpButton_code_test
